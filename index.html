@@ -1,0 +1,18 @@
+---
+layout: default
+title: Home
+---
+
+<h1>Welcome to My Reference Portal</h1>
+
+<p>Browse curated references to blogs and LinkedIn articles.</p>
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.external_url | default: post.url }}">{{ post.title }}</a>
+      {% if post.author %} by {{ post.author }}{% endif %}
+      <small> - {{ post.date | date: "%b %-d, %Y" }}</small>
+    </li>
+  {% endfor %}
+</ul>
