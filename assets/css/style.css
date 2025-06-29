@@ -1,0 +1,74 @@
+/* Main body style */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fdfdfd;
+  line-height: 1.7;
+  color: #333;
+  margin: 0;
+  padding: 0 1rem;
+}
+
+/* Container for each reference card */
+.reference-card {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+.reference-card:hover {
+  transform: scale(1.01);
+}
+
+/* Title link */
+.reference-card h2 {
+  margin-top: 0;
+  font-size: 1.4rem;
+}
+
+.reference-card a.title-link {
+  text-decoration: none;
+  color: #0366d6;
+}
+
+.reference-card a.title-link:hover {
+  text-decoration: underline;
+}
+
+/* Summary blockquote */
+.reference-summary {
+  font-style: italic;
+  color: #555;
+  border-left: 4px solid #ccc;
+  padding-left: 1rem;
+  margin: 1rem 0;
+}
+
+/* Metadata list */
+.metadata {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0;
+}
+
+.metadata li {
+  margin-bottom: 0.3rem;
+}
+
+/* External link */
+.external-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  background: #007acc;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.external-link:hover {
+  background: #005f99;
+}
