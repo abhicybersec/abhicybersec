@@ -19,3 +19,6 @@ defaults:
     values:
       layout: default
       css: /assets/css/style.css
+
+# Allow future dated posts to show
+future: true
