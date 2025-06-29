@@ -14,7 +14,6 @@
   </header>
 
   <main class="content" style="max-width: 800px; margin: auto;">
-
     <article class="reference-card">
 
       {% if page.featured_image %}
@@ -42,3 +41,14 @@
 
       <div class="post-content">
         {{ content }}
+      </div>
+
+    </article>
+  </main>
+
+  <footer style="text-align: center; margin-top: 3rem; padding: 1rem; color: #555;">
+    © {{ site.time | date: "%Y" }} {{ site.title }}
+  </footer>
+
+</body>
+</html>
