@@ -38,22 +38,22 @@ Building your own blog using **Jekyll** and **GitHub Pages** is a powerful way t
 
 ## 📌 Summary
 
-The article provides a complete walkthrough:
-1. Setting up Ruby and Jekyll
-2. Creating your blog structure
-3. Writing your first post
-4. Publishing with GitHub Pages
-5. Customizing themes and layouts
+This article provides a complete walkthrough of:
+
+1. Setting up Ruby and Jekyll  
+2. Creating your blog structure  
+3. Writing your first post  
+4. Publishing with GitHub Pages  
+5. Customizing themes and layouts  
 
 ---
 
 ## 📎 Reference
 
-- **Original article**:  
-  [Read the full article on LinkedIn](https://www.linkedin.com/pulse/how-to-build-jekyll-blog/)  
-- **Author**: Jane Doe  
-- **Published**: June 29, 2025  
-- **Tags**: tutorial, blog, jekyll, github-pages
+- **Original article**: [Read the full article on LinkedIn]({{ page.external_url }})  
+- **Author**: {{ page.author }}  
+- **Published**: {{ page.date | date: "%B %d, %Y" }}  
+- **Tags**: {{ page.tags | join: ", " }}
 
 ---
 
@@ -63,5 +63,5 @@ This is a great article if you’re new to Jekyll or looking for a fast and free
 
 ---
 
-[👉 Open Original on LinkedIn](https://www.linkedin.com/pulse/how-to-build-jekyll-blog/)  
+[👉 Open Original on LinkedIn]({{ page.external_url }})  
 _(Opens in a new tab)_
