@@ -5,38 +5,37 @@ title: Home
 
 # 📚 My Reference Portal
 
-Browse my curated list of blog posts and LinkedIn articles. Each entry includes summary, platform, tags, and more.
+Welcome to a curated library of blog posts and articles that have helped me grow in web development, content strategy, and tech writing. Each post has a short summary, original link, and helpful tags so you can explore them at your own pace.
 
 ---
 
-<ul>
-  {% for post in site.posts %}
-    <li style="margin-bottom: 2rem;">
+{% for post in site.posts %}
+<div style="border: 1px solid #ddd; border-radius: 8px; padding: 1rem; margin-bottom: 2rem; background-color: #fafafa;">
+  
+  {% if post.featured_image %}
+  <img src="{{ post.featured_image }}" alt="Thumbnail for {{ post.title }}" style="max-width: 100%; height: auto; border-radius: 6px; margin-bottom: 10px;">
+  {% endif %}
 
-      {% if post.featured_image %}
-        <img src="{{ post.featured_image }}" alt="Thumbnail for {{ post.title }}" style="max-width:150px; margin-bottom: 10px;">
-      {% endif %}
+  ## 🔖 [{{ post.title }}]({{ post.url }})
 
-      <strong><a href="{{ post.url }}">{{ post.title }}</a></strong><br>
+  {% if post.summary %}
+  > _{{ post.summary }}_
+  {% endif %}
 
-      {% if post.summary %}
-        📝 <em>{{ post.summary }}</em><br>
-      {% endif %}
+  **👤 Author:** {{ post.author }}  
+  **📅 Published:** {{ post.date | date: "%B %d, %Y" }}  
+  {% if post.platform %}**🌐 Platform:** {{ post.platform }}{% endif %}  
+  {% if post.reading_time %}**⏱️ Duration:** {{ post.reading_time }}{% endif %}  
+  {% if post.difficulty %}**📊 Level:** {{ post.difficulty }}{% endif %}  
+  {% if post.language %}**🌎 Language:** {{ post.language }}{% endif %}  
+  {% if post.categories %}**📂 Categories:** {{ post.categories | join: ", " }}{% endif %}  
+  {% if post.tags %}**🏷️ Tags:** {{ post.tags | join: ", " }}{% endif %}
 
-      {% if post.author %}👤 <strong>Author:</strong> {{ post.author }}<br>{% endif %}
-      {% if post.date %}📅 <strong>Date:</strong> {{ post.date | date: "%B %d, %Y" }}<br>{% endif %}
-      {% if post.platform %}🌐 <strong>Platform:</strong> {{ post.platform }}<br>{% endif %}
-      {% if post.language %}🌎 <strong>Language:</strong> {{ post.language }}<br>{% endif %}
-      {% if post.reading_time %}⏱️ <strong>Reading Time:</strong> {{ post.reading_time }}<br>{% endif %}
-      {% if post.difficulty %}📊 <strong>Difficulty:</strong> {{ post.difficulty }}<br>{% endif %}
-      {% if post.categories %}📂 <strong>Categories:</strong> {{ post.categories | join: ", " }}<br>{% endif %}
-      {% if post.tags %}🏷️ <strong>Tags:</strong> {{ post.tags | join: ", " }}<br>{% endif %}
+  {% if post.external_url %}
+  <div style="margin-top: 10px;">
+    🔗 <a href="{{ post.external_url }}" target="_blank" rel="noopener" style="font-weight: bold;">Read Original Article</a>
+  </div>
+  {% endif %}
 
-      {% if post.external_url %}
-        🔗 <a href="{{ post.external_url }}" target="_blank" rel="noopener">Read Original Article</a>
-      {% endif %}
-    </li>
-    <hr>
-  {% endfor %}
-</ul>
-
+</div>
+{% endfor %}
