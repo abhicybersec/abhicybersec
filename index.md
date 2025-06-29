@@ -21,7 +21,7 @@ Welcome to a curated library of blog posts and articles that have helped me grow
     <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
 
     {% if post.summary %}
-    <p class="summary"><em>{{ post.summary }}</em></p>
+    <p class="reference-summary"><em>{{ post.summary }}</em></p>
     {% endif %}
 
     <ul class="metadata">
