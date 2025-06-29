@@ -18,7 +18,7 @@ Welcome to a curated library of blog posts and articles that have helped me grow
     <img src="{{ post.featured_image }}" alt="Thumbnail for {{ post.title }}" class="thumbnail" />
     {% endif %}
 
-    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <h2><a href="{{ post.url }}" class="title-link">{{ post.title }}</a></h2>
 
     {% if post.summary %}
     <p class="reference-summary"><em>{{ post.summary }}</em></p>
