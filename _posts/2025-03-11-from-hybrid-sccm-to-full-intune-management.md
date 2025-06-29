@@ -1,6 +1,6 @@
 ---
 title: "From Hybrid SCCM to Full Intune Management: The Ultimate Guide to Seamless Transition"
-date: 2025-06-29
+date: 2025-03-11
 categories: [device-management, intune, sccm, migration]
 tags: [SCCM, Intune, migration, endpoint-management, Microsoft]
 external_url: "https://www.linkedin.com/pulse/from-hybrid-sccm-full-intune-management-ultimate-guide-abhinay-khanna-ibdsc"
