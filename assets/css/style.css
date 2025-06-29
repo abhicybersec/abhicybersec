@@ -1,11 +1,21 @@
 /* Main body style */
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #fdfdfd;
   line-height: 1.7;
   color: #333;
   margin: 0;
-  padding: 0 1rem;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* Wrapper to center and constrain page width */
+.content {
+  max-width: 720px;
+  width: 100%;
+  padding: 2rem 1.5rem;
+  box-sizing: border-box;
 }
 
 /* Container for each reference card */
@@ -13,29 +23,33 @@ body {
   background: #ffffff;
   border: 1px solid #ddd;
   border-radius: 10px;
-  padding: 1.5rem;
-  margin-bottom: 2rem;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  padding: 1.75rem 2rem;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.07);
   transition: transform 0.2s ease;
 }
 
 .reference-card:hover {
-  transform: scale(1.01);
+  transform: scale(1.02);
 }
 
 /* Title link */
 .reference-card h2 {
   margin-top: 0;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #0366d6;
 }
 
 .reference-card a.title-link {
   text-decoration: none;
-  color: #0366d6;
+  color: inherit;
+  transition: color 0.3s ease;
 }
 
 .reference-card a.title-link:hover {
   text-decoration: underline;
+  color: #004a99;
 }
 
 /* Summary blockquote */
@@ -44,31 +58,59 @@ body {
   color: #555;
   border-left: 4px solid #ccc;
   padding-left: 1rem;
-  margin: 1rem 0;
+  margin: 1rem 0 1.5rem 0;
+  font-size: 1.05rem;
 }
 
 /* Metadata list */
 .metadata {
   list-style: none;
   padding: 0;
-  margin: 0.5rem 0;
+  margin: 0.8rem 0 0 0;
+  color: #666;
+  font-size: 0.9rem;
 }
 
 .metadata li {
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.4rem;
+  display: inline-block;
+  margin-right: 1.2rem;
 }
 
 /* External link */
 .external-link {
   display: inline-block;
-  margin-top: 0.5rem;
-  padding: 0.4rem 0.8rem;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
   background: #007acc;
   color: white;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
 }
 
 .external-link:hover {
   background: #005f99;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .content {
+    padding: 1.5rem 1rem;
+  }
+
+  .reference-card {
+    padding: 1.25rem 1.25rem;
+  }
+
+  .reference-card h2 {
+    font-size: 1.3rem;
+  }
+
+  .metadata li {
+    display: block;
+    margin-bottom: 0.3rem;
+    margin-right: 0;
+  }
 }
