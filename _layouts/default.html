@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title }} | {{ site.title }}</title>
+
+    <link rel="stylesheet" href="{{ page.css | default: '/assets/css/style.css' | relative_url }}">
+    
+    {% if site.favicon %}
+      <link rel="icon" href="{{ site.favicon | relative_url }}">
+    {% endif %}
+  </head>
+
+  <body>
+    <header>
+      <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+      {% if site.description %}<p>{{ site.description }}</p>{% endif %}
+    </header>
+
+    <main>
+      {{ content }}
+    </main>
+
+    <footer>
+      <p>© {{ site.time | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
