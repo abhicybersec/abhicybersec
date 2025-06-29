@@ -1,9 +1,11 @@
 title: My Reference Portal
 description: Curated references to blogs and LinkedIn articles
+keywords: [references, blogs, LinkedIn, tech, content, articles]
+author: Abhinay Khanna
 
 # GitHub Pages Settings
-baseurl: "/username" # The subpath of your site (REQUIRED if hosted at username.github.io/username)
-url: "https://username.github.io" # The base hostname & protocol
+baseurl: "abhicybersec/"
+url: "https://abhicybersec.github.io"
 
 # Theme
 theme: minima
@@ -22,3 +24,6 @@ defaults:
 
 # Allow future dated posts to show
 future: true
+
+# Optional favicon path
+favicon: /assets/images/favicon.ico
