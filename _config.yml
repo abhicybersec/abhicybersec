@@ -1,5 +1,21 @@
 title: My Reference Portal
 description: Curated references to blogs and LinkedIn articles
-baseurl: "/abhicybersec" # Set if deploying to a subpath
-url: "https://abhicybersec.github.io"
+
+# GitHub Pages Settings
+baseurl: "/username" # The subpath of your site (REQUIRED if hosted at username.github.io/username)
+url: "https://username.github.io" # The base hostname & protocol
+
+# Theme
 theme: minima
+
+# SASS compression
+sass:
+  style: compressed
+
+# Defaults for layout and CSS
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+      css: /assets/css/style.css
