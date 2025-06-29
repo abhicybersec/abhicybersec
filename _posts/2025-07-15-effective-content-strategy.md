@@ -49,10 +49,10 @@ The article covers:
 
 ## 📎 Reference
 
-- **Original article**: [Read the full article on Medium]({{ page.external_url }})  
-- **Author**: {{ page.author }}  
-- **Published**: {{ page.date | date: "%B %d, %Y" }}  
-- **Tags**: {{ page.tags | join: ", " }}
+- **Original article**: [Read the full article on Medium](https://medium.com/@author/effective-content-strategy-tech-blogs-1234567890ab)  
+- **Author**: John Smith  
+- **Published**: July 15, 2025  
+- **Tags**: strategy, content, blogging
 
 ---
 
@@ -62,5 +62,5 @@ If you want your tech blog to stand out and build a loyal readership, this strat
 
 ---
 
-[👉 Open Original on Medium]({{ page.external_url }})  
+[👉 Open Original on Medium](https://medium.com/@author/effective-content-strategy-tech-blogs-1234567890ab)  
 _(Opens in a new tab)_
