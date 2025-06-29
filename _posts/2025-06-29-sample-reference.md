@@ -6,6 +6,12 @@ tags: [tutorial, blog]
 external_url: "https://www.linkedin.com/pulse/how-to-build-jekyll-blog/"
 layout: post
 author: "Jane Doe"
+summary: "A beginner-friendly guide to building and hosting a Jekyll blog using GitHub Pages."
+platform: LinkedIn
+reading_time: "7 min read"
+featured_image: "/assets/images/jekyll-blog-thumb.png"
+language: English
+difficulty: Beginner
 ---
 
 Building your own blog using **Jekyll** and **GitHub Pages** is a powerful way to publish content without a traditional CMS or paid hosting. This guide walks through setting up a Jekyll site, configuring GitHub Pages, and deploying updates with ease.
