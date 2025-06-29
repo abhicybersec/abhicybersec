@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+</head>
+<body>
+
+  <header style="text-align: center; padding: 2rem;">
+    <h1>{{ site.title }}</h1>
+    <p>{{ site.description }}</p>
+  </header>
+
+  <main class="content" style="max-width: 800px; margin: auto;">
+
+    <article class="reference-card">
+
+      {% if page.featured_image %}
+        <img src="{{ page.featured_image }}" alt="{{ page.title }} thumbnail" style="max-width: 100%; border-radius: 6px; margin-bottom: 1rem;">
+      {% endif %}
+
+      <h1>{{ page.title }}</h1>
+
+      {% if page.summary %}
+        <blockquote class="reference-summary">{{ page.summary }}</blockquote>
+      {% endif %}
+
+      <ul class="metadata">
+        {% if page.author %}<li><strong>👤 Author:</strong> {{ page.author }}</li>{% endif %}
+        <li><strong>📅 Published:</strong> {{ page.date | date: "%B %d, %Y" }}</li>
+        {% if page.platform %}<li><strong>🌐 Platform:</strong> {{ page.platform }}</li>{% endif %}
+        {% if page.reading_time %}<li><strong>⏱️ Reading Time:</strong> {{ page.reading_time }}</li>{% endif %}
+        {% if page.difficulty %}<li><strong>📊 Difficulty:</strong> {{ page.difficulty }}</li>{% endif %}
+        {% if page.language %}<li><strong>🌎 Language:</strong> {{ page.language }}</li>{% endif %}
+        {% if page.categories %}<li><strong>📂 Categories:</strong> {{ page.categories | join: ", " }}</li>{% endif %}
+        {% if page.tags %}<li><strong>🏷️ Tags:</strong> {{ page.tags | join: ", " }}</li>{% endif %}
+      </ul>
+
+      <hr>
+
+      <div class="post-content">
+        {{ content }}
