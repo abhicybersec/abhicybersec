@@ -1,0 +1,22 @@
+# Jekyll build output folder
+_site/
+
+# Sass cache folder
+.sass-cache/
+
+# Jekyll cache and metadata files
+.jekyll-cache/
+.jekyll-metadata/
+
+# Bundler dependencies folders
+.bundle/
+vendor/
+
+# macOS system files (optional but recommended)
+.DS_Store
+
+# VSCode settings folder (optional)
+.vscode/
+
+# Log files
+*.log
