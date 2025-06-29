@@ -1,0 +1,6 @@
+title: My Reference Portal
+description: Curated references to blogs and LinkedIn articles
+baseurl: "/username" # Set if deploying to a subpath
+url: "https://username.github.io"
+theme: minima
+
